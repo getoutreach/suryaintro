@@ -1,0 +1,23 @@
+# This file is a smartstore codegen configuration for the suryaintro store.
+# All paths in this file are relative to the location of this file which is the repo's root.
+app_name: suryaintro
+resource_name: suryaintro
+migrations:
+  path: ../../../migrations
+tables:
+# jet instructs the codegen to run schema migrations and invoke go-jet on the result PostgreSQL.
+# The generated model and table structs are copied to the dest_path below, they are used for
+# smartstore CDC in Q1.
+jet:
+  dest_path: jet
+  package_prefix: github.com/getoutreach/suryaintro/internal/smartstore/suryaintro/jet
+  # If you need to extend global jet config, do it here. Otherwise, we recommend adding new
+  # jets config in the extra block and the end of this file.
+  ## <<Stencil::Block(jetCustomization)>>
+
+  ## <</Stencil::Block>>
+# Additional codegen features such as ent or custom jets can be added here. For detailed help, click:
+# https://github.com/getoutreach/smartstore/blob/main/documentation/getting-started/codegen-started.md.
+## <<Stencil::Block(extras)>>
+
+## <</Stencil::Block>>

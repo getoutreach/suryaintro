@@ -106,8 +106,19 @@ workflows:
             - shared/test
             - shared/docker_stitch
       ### End jobs inserted by other modules
+      - shared/test_node_client:
+          context: *contexts
+          steps:
+            ## <<Stencil::Block(testNodeClientSteps)>>
+            []
+            ## <</Stencil::Block>>
+          requires:
+            ## <<Stencil::Block(testNodeRequires)>>
+            []
+            ## <</Stencil::Block>>
       - shared/release: &release
           dryrun: false
+          node_client: true
           context: *contexts
           ## <<Stencil::Block(circleReleaseExtra)>>
 
@@ -117,6 +128,7 @@ workflows:
 
             ## <</Stencil::Block>>
             - shared/test
+            - shared/test_node_client
           filters:
             branches:
               only: *release_branches

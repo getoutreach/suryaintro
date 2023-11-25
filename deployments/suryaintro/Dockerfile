@@ -43,4 +43,15 @@ RUN apk add --no-cache curl \
 ## <</Stencil::Block>>
 
 COPY --from=builder /src/bin/suryaintro /usr/local/bin/suryaintro
+
+# Begin afterBuild module hook entries
+
+# Smartstore Integration
+COPY --from=builder /src/bin/suryaintro-migrations /usr/local/bin/suryaintro-migrations
+COPY --from=builder /src/migrations /run/config/outreach.io/migrations
+# The below bin is needed for administrative actions like shard split/apply
+RUN apk add --no-cache postgresql-client
+COPY --from=gcr.io/outreach-docker/smartstore:v1.131.0 /usr/local/bin/smartstore /usr/local/bin/smartstore
+
+# End afterBuild module hook entries
 USER systemuser

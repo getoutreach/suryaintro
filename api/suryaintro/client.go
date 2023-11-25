@@ -98,3 +98,12 @@ func (c client) Pong(ctx context.Context, message string) (string, error) {
 	}
 	return resp.Message, nil
 }
+
+func (c client) Joke(ctx context.Context) (string, error) {
+	in := &api.JokeRequest{}
+	resp, err := c.SuryaintroClient.Joke(ctx, in)
+	if err != nil {
+		return "", err
+	}
+	return resp.Joke, nil
+}

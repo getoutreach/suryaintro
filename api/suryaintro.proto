@@ -28,8 +28,17 @@ message PongResponse {
   string message = 1;
 }
 
+// JokeRequest is the request for ping
+message JokeRequest {}
+
+// JokeResponse is the response for echo.
+message JokeResponse {
+  string joke = 1;
+}
+
 // Suryaintro is the suryaintro service.
 service Suryaintro {
   rpc Ping(PingRequest) returns (PingResponse) {}
   rpc Pong(PongRequest) returns (PongResponse) {}
+  rpc Joke(JokeRequest) returns (JokeResponse) {}
 }

@@ -17,4 +17,6 @@ type Service interface {
 	Close(ctx context.Context) error
 	Ping(ctx context.Context, message string) (string, error)
 	Pong(ctx context.Context, message string) (string, error)
+
+	Joke(ctx context.Context) (string, error)
 }

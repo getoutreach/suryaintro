@@ -205,4 +205,13 @@ func (s rpcserver) Pong(ctx context.Context, req *api.PongRequest) (*api.PongRes
 	return &api.PongResponse{Message: message}, nil
 }
 
+// Joke returns a dad joke.
+func (s rpcserver) Joke(ctx context.Context, req *api.JokeRequest) (*api.JokeResponse, error) {
+	joke, err := s.Service.Joke(ctx)
+	if err != nil {
+		return nil, err
+	}
+	return &api.JokeResponse{Joke: joke}, nil
+}
+
 // <</Stencil::Block>>
