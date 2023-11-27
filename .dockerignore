@@ -1,0 +1,14 @@
+.git/
+
+# Node modules
+
+node_modules/
+api/clients/node/node_modules/
+
+# Temorary files
+.devspace/
+bin/
+
+## <<Stencil::Block(extras)>>
+
+## <</Stencil::Block>>

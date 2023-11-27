@@ -1,0 +1,48 @@
+name: suryaintro
+arguments:
+  deployment:
+    environments:
+      - ops
+    serviceDomains:
+      - bento
+  description: Tutorial service for the purpose of enlightenment and enrichment
+  lifecycle: in_development
+  lintroller: platinum
+  metrics: datadog
+  opslevel:
+    confluenceSpaceKey: fri
+  reportingTeam: cad-fri
+  service: true
+  serviceActivities:
+    - grpc
+  tier: 2
+  tracing: opentelemetry
+  tutorial: true
+  vaultSecrets:
+    - deploy/mint/%(environment)s/validation/mint-validator-payload
+    - deploy/flagship-shared-secret/%(environment)s/authn-flagship-payload
+  postgreSQL:
+    - name: suryaintro
+      version: "13.9"
+      databaseName: suryaintro
+      parameterGroupFamily: aurora-postgresql13
+      tier: tier-2
+      schemas:
+        - name: suryaintro
+          target: Org
+  grpcClients:
+    - node
+modules:
+  - name: github.com/getoutreach/stencil-base
+    channel: rc
+  - name: github.com/getoutreach/stencil-golang
+    channel: rc
+  - name: github.com/getoutreach/devbase
+    channel: rc
+  - name: github.com/getoutreach/stencil-outreach
+    channel: rc
+  - name: github.com/getoutreach/stencil-smartstore
+    channel: rc
+  - name: github.com/getoutreach/stencil-circleci
+    channel: rc
+migrated: true
