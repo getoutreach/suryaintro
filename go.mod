@@ -10,7 +10,6 @@ require (
 	github.com/getoutreach/services v1.175.1
 	github.com/getoutreach/stencil-golang/pkg v0.0.0-20230811193316-312178c3fbc3
 	github.com/getoutreach/tollmon v1.40.1
-	github.com/gofrs/uuid v4.3.1+incompatible
 	github.com/urfave/cli/v2 v2.25.7
 	google.golang.org/grpc v1.58.2
 	google.golang.org/protobuf v1.31.0
@@ -110,7 +109,7 @@ require (
 	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/google/go-cmp v0.6.0 // indirect
 	github.com/google/gofuzz v1.2.0 // indirect
-	github.com/google/uuid v1.3.1 // indirect
+	github.com/google/uuid v1.3.1
 	github.com/googleapis/gnostic v0.5.5 // indirect
 	github.com/gregjones/httpcache v0.0.0-20190611155906-901d90724c79 // indirect
 	github.com/grpc-ecosystem/go-grpc-middleware v1.3.0 // indirect
