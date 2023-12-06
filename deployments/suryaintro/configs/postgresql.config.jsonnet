@@ -34,6 +34,25 @@ local configurationOverride = {
   bento: {
     ///Block(bentoConfig)
 
+    bento1a: {
+      migrations+: {
+        spec+: {
+          template+: {
+            spec+: {
+              containers_+:: {
+                default+: {
+                  env_+:: {
+                    SMARTSTORE_SCHEMAS_FROM_ORGAPI: 'yes',
+                    SMARTSTORE_IGNORE_ORG_BACKFILL_ALLOWLIST: 'yes',
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+
     ///EndBlock(bentoConfig)
   },
 };

@@ -12,7 +12,7 @@ import (
 
 	"github.com/getoutreach/httpx/pkg/fetch"
 	"github.com/getoutreach/mint/pkg/authn"
-	"github.com/gofrs/uuid"
+	"github.com/google/uuid"
 )
 
 // Server is the actual server implementation of the API.
@@ -52,6 +52,8 @@ func (s *Server) Joke(ctx context.Context) (string, error) {
 	}
 
 	org := authn.CurrentOrgGUID(ctx)
+
+	fmt.Println("------------------------->", org)
 
 	// recall that we defined the name of the element of the PostgreSQL map to
 	// be suryaintro in service.yaml above. If we had multiple resources

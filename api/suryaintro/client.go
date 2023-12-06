@@ -83,6 +83,7 @@ func (c client) Close(ctx context.Context) error {
 // Place any client handler functions for your service here
 func (c client) Ping(ctx context.Context, message string) (string, error) {
 	in := &api.PingRequest{Message: message}
+	fmt.Println("<-------------Ping Client-------------->")
 	resp, err := c.SuryaintroClient.Ping(ctx, in)
 	if err != nil {
 		return "", err
@@ -92,6 +93,7 @@ func (c client) Ping(ctx context.Context, message string) (string, error) {
 
 func (c client) Pong(ctx context.Context, message string) (string, error) {
 	in := &api.PongRequest{Message: message}
+	fmt.Println("<-------------Pong Client-------------->")
 	resp, err := c.SuryaintroClient.Pong(ctx, in)
 	if err != nil {
 		return "", err
@@ -101,6 +103,7 @@ func (c client) Pong(ctx context.Context, message string) (string, error) {
 
 func (c client) Joke(ctx context.Context) (string, error) {
 	in := &api.JokeRequest{}
+	fmt.Println("<-------------Joke Client-------------->")
 	resp, err := c.SuryaintroClient.Joke(ctx, in)
 	if err != nil {
 		return "", err

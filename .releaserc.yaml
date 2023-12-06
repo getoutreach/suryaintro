@@ -1,6 +1,7 @@
 preset: conventionalcommits
 branches:
   - name: main
+  - name: onboarding
 plugins:
   - - "@semantic-release/commit-analyzer"
     - releaseRules:
