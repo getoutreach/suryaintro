@@ -17,9 +17,9 @@ updates:
       - dependency-name: github.com/getoutreach/tollmon
       - dependency-name: github.com/getoutreach/mint
       - dependency-name: github.com/getoutreach/clerk/v3
+      - dependency-name: github.com/getoutreach/clerkcommons
       - dependency-name: github.com/getoutreach/httpx
       - dependency-name: github.com/getoutreach/polaroid
-      - dependency-name: github.com/getoutreach/clerkcommons
 
   # Ignore semantic-release, this code is only executed in CI.
   - package-ecosystem: "npm"

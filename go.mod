@@ -94,7 +94,7 @@ require (
 	github.com/envoyproxy/protoc-gen-validate v1.0.2 // indirect
 	github.com/evanphx/json-patch v5.6.0+incompatible // indirect
 	github.com/felixge/httpsnoop v1.0.3 // indirect
-	github.com/getoutreach/clerkcommons v1.334.0 // indirect
+	github.com/getoutreach/clerkcommons v1.336.0 // indirect
 	github.com/getoutreach/datastores/v2 v2.26.1 // indirect
 	github.com/getoutreach/fflags v1.11.0 // indirect
 	github.com/getoutreach/orgapi v1.16.0 // indirect

@@ -361,8 +361,8 @@ github.com/fynelabs/selfupdate v0.2.0 h1:IDqwgV7BYj4lCcoD8hHvIapVGmS5ifWrc0sQTWh
 github.com/fynelabs/selfupdate v0.2.0/go.mod h1:rCdliRnLw+koUanA+lrqub9wWlNc2wPDTsyRC6A+vfc=
 github.com/garyburd/redigo v0.0.0-20150301180006-535138d7bcd7/go.mod h1:NR3MbYisc3/PwhQ00EMzDiPmrwpPxAn5GI05/YaO1SY=
 github.com/getkin/kin-openapi v0.76.0/go.mod h1:660oXbgy5JFMKreazJaQTw7o+X00qeSyhcnluiMv+Xg=
-github.com/getoutreach/clerkcommons v1.334.0 h1:5KmoZxNp8DXaLXV5wFX76wL1x+h6yqcBOXfG4r2kQZo=
-github.com/getoutreach/clerkcommons v1.334.0/go.mod h1:1nzw72MJ6GxzYitOwtnopGCTu2pCKuKFTDrifWjrjM0=
+github.com/getoutreach/clerkcommons v1.336.0 h1:QfUKcQ0ADziTE+yzUU9MFPKSAamzs/XiR2Nw0C42AD8=
+github.com/getoutreach/clerkcommons v1.336.0/go.mod h1:1nzw72MJ6GxzYitOwtnopGCTu2pCKuKFTDrifWjrjM0=
 github.com/getoutreach/datastores/v2 v2.26.1 h1:0QRTGv8nSoMJK4mENiOVo73i6oMUzGffsa+VbIx/jBc=
 github.com/getoutreach/datastores/v2 v2.26.1/go.mod h1:g4EgUbTc01wWi6JEwzeNJmY3ikNHVOlp8tplgdsWUJM=
 github.com/getoutreach/fflags v1.11.0 h1:U8vVPC9XaAf7kCzsq6y5moAAdQELk+Un4E/O8/5Vmps=

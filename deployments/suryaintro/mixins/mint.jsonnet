@@ -12,7 +12,7 @@ local all = {
     metadata+: {
       annotations+: {
         'outreach.io/authn-v1-service-id': 'suryaintro@outreach.cloud',
-        'outreach.io/authn-v1-alias-ids': 'platform-services@outreach.cloud',
+        'outreach.io/authn-v1-alias-ids': 'frontend-services@outreach.cloud platform-services@outreach.cloud',
         'outreach.io/authn-v1-audience-ids': 'orgservice@outreach.cloud tollmon@outreach.cloud orgapi@outreach.cloud',
         'outreach.io/authn-v1-can-impersonate-user': 'false',
         'outreach.io/authn-v1-permitted-user-scopes': '',

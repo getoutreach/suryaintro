@@ -32,6 +32,9 @@ arguments:
           target: Org
   grpcClients:
     - node
+  authn:
+    aliases:
+      - frontend-services@outreach.cloud
 modules:
   - name: github.com/getoutreach/stencil-base
     channel: rc
