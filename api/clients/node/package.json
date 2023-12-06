@@ -63,5 +63,5 @@
     "test-ci": "NODE_ENV=test jest \"./src/\"",
     "tsc": "node -r tsconfig-paths/register ./node_modules/.bin/tsc -p tsconfig.production.json && node ./scripts/copy-definitions.js"
   },
-  "version": "0.0.1"
+  "version": "1.0.0"
 }
